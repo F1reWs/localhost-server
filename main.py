@@ -1,7 +1,7 @@
 import http.server
 import socketserver
 
-port = input("Port:")
+port = 8000
 Handler = http.server.SimpleHTTPRequestHandler
 
 with socketserver.TCPServer(("", port), Handler) as httpd:
